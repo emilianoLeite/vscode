@@ -38,7 +38,8 @@ export class InMemoryDocument implements vscode.TextDocument {
 			range: new vscode.Range(0, 0, 0, 0),
 			firstNonWhitespaceCharacterIndex: 0,
 			rangeIncludingLineBreak: new vscode.Range(0, 0, 0, 0),
-			isEmptyOrWhitespace: false
+			isEmptyOrWhitespace: false,
+			isLastLine: (line + 1) === this.lineCount
 		};
 	}
 	offsetAt(_position: vscode.Position): never {

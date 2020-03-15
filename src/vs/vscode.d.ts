@@ -79,6 +79,11 @@ declare module 'vscode' {
 		 * for [TextLine.firstNonWhitespaceCharacterIndex](#TextLine.firstNonWhitespaceCharacterIndex) === [TextLine.text.length](#TextLine.text).
 		 */
 		readonly isEmptyOrWhitespace: boolean;
+
+		/**
+		 * Whether this line is the last line of the file
+		 */
+		readonly isLastLine: boolean;
 	}
 
 	/**

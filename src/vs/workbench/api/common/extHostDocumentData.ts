@@ -277,4 +277,8 @@ class ExtHostDocumentLine implements vscode.TextLine {
 	public get isEmptyOrWhitespace(): boolean {
 		return this.firstNonWhitespaceCharacterIndex === this._text.length;
 	}
+
+	public get isLastLine(): boolean {
+		return this._isLastLine;
+	}
 }
